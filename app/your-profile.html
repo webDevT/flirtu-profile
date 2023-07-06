@@ -96,7 +96,14 @@
 			<img src="img/photo2.png" alt="photo" class="slider-image">
 		</a>	
 		<div class="swiper-date">
-			Mar 23, 2023
+			<span>
+				Mar 23, 2023
+			</span>
+
+			<div class="delite-photo">
+				<img src="img/del-grey.png" alt="">
+			</div>
+			
 		</div>
 	</swiper-slide>
 
@@ -196,7 +203,12 @@
 	
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	$('.delite-photo img').click(function(){
+		$(this).parent().parent().parent().fadeOut();
+	})
+</script>
 	<script src="js/swiper.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
 	<script>
