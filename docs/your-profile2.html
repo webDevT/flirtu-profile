@@ -41,9 +41,10 @@
 
 
 		<!-- start slider -->
-		<div class="swiper-wrapper">
-			<swiper-container class="swiper" space-between="16" slides-per-view="auto">
-	<swiper-slide>
+		<div class="container">
+			<div class="photo-list">
+			
+	<div class="photo__item">
 		<a href="img/photo1.png" data-fancybox="gallery1" class="fancybox">
 			<img src="img/photo1.png" alt="photo" class="slider-image">
 		</a>	
@@ -57,9 +58,9 @@
 			</div>
 			
 		</div>
-	</swiper-slide>
+	</div>
 
-	<swiper-slide>
+	<div class="photo__item">
 		<a href="img/photo2.png" data-fancybox="gallery1" class="fancybox">
 			<img src="img/photo2.png" alt="photo" class="slider-image">
 		</a>	
@@ -73,9 +74,9 @@
 			</div>
 			
 		</div>
-	</swiper-slide>
+	</div>
 
-	<swiper-slide>
+	<div class="photo__item">
 		<a href="img/photo1.png" data-fancybox="gallery1" class="fancybox">
 			<img src="img/photo1.png" alt="photo" class="slider-image">
 		</a>	
@@ -89,18 +90,18 @@
 			</div>
 			
 		</div>
-	</swiper-slide>
+	</div>
 
-	<swiper-slide>
+	<div class="photo__item">
 		<a href="img/photo2.png" data-fancybox="gallery1" class="fancybox">
 			<img src="img/photo2.png" alt="photo" class="slider-image">
 		</a>	
 		<div class="swiper-date">
 			Mar 23, 2023
 		</div>
-	</swiper-slide>
+	</div>
 
-	<swiper-slide>
+	<div class="photo__item">
 		<a href="img/photo1.png" data-fancybox="gallery1" class="fancybox">
 			<img src="img/photo1.png" alt="photo" class="slider-image">
 		</a>	
@@ -114,9 +115,9 @@
 			</div>
 			
 		</div>
-	</swiper-slide>
+	</div>
 
-	<swiper-slide>
+	<div class="photo__item">
 		<div class="add-photo">
 			<input type="file" class="input-file" id="file">
 			<label for="file"><img src="img/plus.svg" alt=""></label>
@@ -125,10 +126,12 @@
 		<div class="swiper-date">
 			
 		</div>
-	</swiper-slide>
+	</div>
 	
-	</swiper-container>
+	
 		</div>
+		</div>
+		
 
 		<!-- end slider -->
 		
@@ -197,7 +200,7 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
-	<script src="js/swiper.js"></script>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
 	<script>
 		 $('[data-fancybox="gallery1"]').fancybox({

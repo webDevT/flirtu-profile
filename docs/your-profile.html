@@ -7,6 +7,7 @@
 	<meta name="description" content="Dating in telegram">
 	<title>Flirtu</title>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -36,6 +37,100 @@
 		</div>
 
 		</div>
+
+
+
+		<!-- start slider -->
+		<div class="swiper-wrapper">
+			<swiper-container class="swiper" space-between="16" slides-per-view="auto">
+	<swiper-slide>
+		<a href="img/photo1.png" data-fancybox="gallery1" class="fancybox">
+			<img src="img/photo1.png" alt="photo" class="slider-image">
+		</a>	
+		<div class="swiper-date">
+			<span>
+				Mar 23, 2023
+			</span>
+
+			<div class="delite-photo">
+				<img src="img/del-grey.png" alt="">
+			</div>
+			
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<a href="img/photo2.png" data-fancybox="gallery1" class="fancybox">
+			<img src="img/photo2.png" alt="photo" class="slider-image">
+		</a>	
+		<div class="swiper-date">
+			<span>
+				Mar 23, 2023
+			</span>
+
+			<div class="delite-photo">
+				<img src="img/del-grey.png" alt="">
+			</div>
+			
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<a href="img/photo1.png" data-fancybox="gallery1" class="fancybox">
+			<img src="img/photo1.png" alt="photo" class="slider-image">
+		</a>	
+		<div class="swiper-date">
+			<span>
+				Mar 23, 2023
+			</span>
+
+			<div class="delite-photo">
+				<img src="img/del-grey.png" alt="">
+			</div>
+			
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<a href="img/photo2.png" data-fancybox="gallery1" class="fancybox">
+			<img src="img/photo2.png" alt="photo" class="slider-image">
+		</a>	
+		<div class="swiper-date">
+			Mar 23, 2023
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<a href="img/photo1.png" data-fancybox="gallery1" class="fancybox">
+			<img src="img/photo1.png" alt="photo" class="slider-image">
+		</a>	
+		<div class="swiper-date">
+			<span>
+				Mar 23, 2023
+			</span>
+
+			<div class="delite-photo">
+				<img src="img/del-grey.png" alt="">
+			</div>
+			
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<div class="add-photo">
+			<input type="file" class="input-file" id="file">
+			<label for="file"><img src="img/plus.svg" alt=""></label>
+			
+		</div>	
+		<div class="swiper-date">
+			
+		</div>
+	</swiper-slide>
+	
+	</swiper-container>
+		</div>
+
+		<!-- end slider -->
 		
 
 	<div class="questions-list questions-list--edit">
@@ -100,6 +195,17 @@
 	</div>
 	
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+	<script src="js/swiper.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+	<script>
+		 $('[data-fancybox="gallery1"]').fancybox({
+  transitionEffect: "fade",
+  transitionDuration: 0,
+
+});
+	</script>
 
 
 </body>

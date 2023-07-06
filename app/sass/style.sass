@@ -37,14 +37,31 @@ swiper-slide
     width: 50%
 .slider-image 
     width: 100%
-    height: calc( 100% - 26px  )
+    height: calc( 100% - 26px)
     object-fit: cover 
     object-position: center
+.add-photo
+    width: 100%
+    height: calc( 100% - 26px)
+    background: #d5d4d4
+    border-radius: 4px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    img
+        width: 50px
+.input-file
+    display: none
 .swiper 
     padding-left: 24px
 .swiper-date 
     font-size: 14px
     color: #667B8A
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    img 
+        width: 13px
 //end swiper style 
 
 //start profile-header style
@@ -285,7 +302,17 @@ label
     font-family: 'DM Sans', sans-serif
     font-size: 18px
 //end modal style 
-
+.photo-list
+    display: flex 
+    flex-wrap: wrap
+.photo__item 
+    width: 46% 
+    margin: 20px 2%
+    height: 350px
+    img
+        border-radius: 4px
+    .swiper-date
+        margin-top: 6px
 @import "media"
 
 
