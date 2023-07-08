@@ -29,7 +29,7 @@
 				<input type="file" class="input-file" id="file">
 				<label for="file"><img src="img/edit.png" alt=""></label>
 				
-				<img src="img/del-light-grey.png" alt="" class="delete-main-photo">
+				
 				
 			</div>
 		</div>
@@ -65,6 +65,22 @@
 					<input type="file" class="input-file" id="file">
 					<label for="file"><img src="img/plus.svg" alt="" class="plus-photo"></label>
 				</div>
+				<div class="modal" id="modal">
+					<div class="modal-content">
+						<div class="modal-title">
+							Delete photo?
+						</div>
+				
+						<div class="profile-buttons">
+								<div class="button close-modal">
+									Cancel
+								</div>
+								<div class="button button--red delete-photo">
+									Done
+								</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="photo-item__wrap">
@@ -76,6 +92,22 @@
 				</div>
 
 				<img src="img/del.png" alt="" class="delete-photo-item">
+				<div class="modal" id="modal">
+					<div class="modal-content">
+						<div class="modal-title">
+							Delete photo?
+						</div>
+				
+						<div class="profile-buttons">
+								<div class="button close-modal">
+									Cancel
+								</div>
+								<div class="button button--red delete-photo">
+									Done
+								</div>
+						</div>
+					</div>
+				</div>
 				</div>
 				<div class="photo-item">				
 					<div class="photo-plus-wrapper">
@@ -134,6 +166,8 @@
 						Persimmon and blue
 					</div>
 				</div>
+
+
 			</div>
 
 			<div class="questions-item">
@@ -181,6 +215,8 @@
 	
 </div>
 
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
 	$('.delite-photo img').click(function(){
@@ -199,7 +235,16 @@
 
 	<script>
 		$('.delete-photo-item').click(function(){
-			$(this).parent().find('.photo-item__img').fadeOut();
+			$(this).parent().find('.modal').fadeIn();		
+		})
+
+		$('.delete-photo').click(function(){
+			$('.modal').fadeOut();
+			$(this).parent().parent().parent().parent().find('.photo-item__img').fadeOut();
+		})
+
+		$('.close-modal').click(function(){
+			$('.modal').fadeOut();
 		})
 
 		$('.delete-main-photo').click(function(){
