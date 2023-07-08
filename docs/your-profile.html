@@ -18,7 +18,22 @@
 			Flirtu
 			<img src="img/heart.png" alt="hearts" width="23" height="16">
 		</div>
-		<img src="img/profile-photo2.png" alt="photo profile" class="profile-photo" width="200" height="200">
+
+		<div class="main-photo-wrapper">
+			<div class="photo-plus-wrapper">
+				<input type="file" class="input-file" id="file">
+				<label for="file"><img src="img/plus.svg" alt="" class="plus-photo"></label>
+			</div>
+			<img src="img/profile-photo2.png" alt="photo profile" class="profile-photo" width="200" height="200">
+			<div class="main-photo__footer">
+				<input type="file" class="input-file" id="file">
+				<label for="file"><img src="img/edit.png" alt=""></label>
+				
+				<img src="img/del-light-grey.png" alt="" class="delete-main-photo">
+				
+			</div>
+		</div>
+		
 	</div>
 
 	<div class="profile-content">
@@ -92,6 +107,9 @@
 
 			
 	</div>
+	<a href="" class="button--blue add-video-button">
+		Add Photos Or Videos
+	</a>
 </div>
 			
 			
@@ -183,6 +201,13 @@
 		$('.delete-photo-item').click(function(){
 			$(this).parent().find('.photo-item__img').fadeOut();
 		})
+
+		$('.delete-main-photo').click(function(){
+			$('.profile-photo').fadeOut();
+			$('.main-photo__footer').fadeOut();
+		})
+
+		
 	</script>
 
 
