@@ -217,6 +217,7 @@
     <!-- start modal succes -->
 
     <div class="modal" id="modal">
+      <img src="img/close.png" alt="" class="close-btn">
       <div class="modal-content">
         <img src="img/check.png" alt="">
         <div class="modal-title">Photo uploaded successfully</div>
@@ -229,6 +230,7 @@
 
     <div class="modal" id="modal">
       <div class="modal-content">
+        <img src="img/close.png" alt="" class="close-btn">
         <img src="img/fail.png" alt="">
         <div class="modal-title">Loading error</div>
 
@@ -272,7 +274,7 @@
           .fadeOut();
       });
 
-      $(".close-modal").click(function () {
+      $(".close-modal, .close-btn").click(function () {
         $(".modal").fadeOut();
       });
 
@@ -281,5 +283,7 @@
         $(".main-photo__footer").fadeOut();
       });
     </script>
+
+
   </body>
 </html>
