@@ -28,7 +28,7 @@
 
         <div class="main-photo-wrapper">
           <div class="photo-plus-wrapper">
-            <input type="file" class="input-file" id="file1" />
+            <input type="file" class="input-file" id="file1" accept="image/*"/>
             <label for="file1"
               ><img src="img/plus.svg" alt="plus icon" class="plus-photo"
             /></label>
@@ -41,8 +41,8 @@
             height="200"
           />
           <div class="main-photo__footer">
-            <input type="file" class="input-file" id="file2" />
-            <label for="fil2"><img src="img/edit.png" alt="edit icon" /></label>
+            <input type="file" class="input-file" id="file2" accept="image/*"/>
+            <label for="file2"><img src="img/edit.png" alt="edit icon" /></label>
           </div>
         </div>
       </div>
@@ -67,16 +67,18 @@
                 data-fancybox="gallery1"
                 class="fancybox"
               >
-                <img src="img/photo1.png" alt="photo" class="photo-item__img" />
+                <img src="img/photo1.png" alt="photo" class="photo-item__img" accept="image/*"/>
               </a>
-
+<div class="delete-wrapper">
+  
+</div>
               <img
                 src="img/del.png"
                 alt=""
                 class="delete-photo-item delete-photo-item--big"
               />
               <div class="photo-plus-wrapper">
-                <input type="file" class="input-file" id="file3" />
+                <input type="file" class="input-file" id="file3" accept="image/*"/>
                 <label for="file3"
                   ><img src="img/plus.svg" alt="plus icon" class="plus-photo"
                 /></label>
@@ -107,7 +109,7 @@
                   />
                 </a>
                 <div class="photo-plus-wrapper">
-                  <input type="file" class="input-file" id="file4" />
+                  <input type="file" class="input-file" id="file4" accept="image/*"/>
                   <label for="file4"
                     ><img src="img/plus.svg" alt="" class="plus-photo"
                   /></label>
@@ -127,7 +129,7 @@
               </div>
               <div class="photo-item">
                 <div class="photo-plus-wrapper">
-                  <input type="file" class="input-file" id="file5" />
+                  <input type="file" class="input-file" id="file5" accept="image/*"/>
                   <label for="file5"
                     ><img src="img/plus.svg" alt="plus icon" class="plus-photo"
                   /></label>
@@ -137,7 +139,7 @@
 
             <div class="photo-item">
               <div class="photo-plus-wrapper">
-                <input type="file" class="input-file" id="file6" />
+                <input type="file" class="input-file" id="file6" accept="image/*"/>
                 <label for="file6"
                   ><img src="img/plus.svg" alt="plus icon" class="plus-photo"
                 /></label>
@@ -146,7 +148,7 @@
 
             <div class="photo-item">
               <div class="photo-plus-wrapper">
-                <input type="file" class="input-file" id="file7" />
+                <input type="file" class="input-file" id="file7" accept="image/*"/>
                 <label for="file7"
                   ><img src="img/plus.svg" alt="plus icon" class="plus-photo"
                 /></label>
@@ -154,7 +156,7 @@
             </div>
 
             <div class="photo-item">
-              <input type="file" class="input-file" id="file8" />
+              <input type="file" class="input-file" id="file8" accept="image/*"/>
               <label for="file8"
                 ><img src="img/plus.svg" alt="plus icon" class="plus-photo"
               /></label>
@@ -210,6 +212,32 @@
       </div>
     </div>
     <!-- end footer -->
+
+
+    <!-- start modal succes -->
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <img src="img/check.png" alt="">
+        <div class="modal-title">Photo uploaded successfully</div>
+
+      
+    </div>
+    <!-- end modal succes -->
+
+    <!-- start modal fail -->
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <img src="img/fail.png" alt="">
+        <div class="modal-title">Loading error</div>
+
+      
+    </div>
+    <!-- end modal fail -->
+
+
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
