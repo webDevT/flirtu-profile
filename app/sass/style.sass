@@ -355,7 +355,10 @@ label
     position: relative
     z-index: 9
 .plus-photo
-    width: 37px
+    width: 50px
+    border: 2px solid #017DF8
+    padding: 10px
+    border-radius: 50%
 .delete-photo-item 
     position: absolute
     bottom: 10px
@@ -503,6 +506,19 @@ swiper-slide
     right: 15px
     position: absolute
     cursor: pointer
+.spinner
+    width: 50px
+    height: 50px
+    border: 2px solid #017DF8
+    border-top: 2px solid #f8f7ff
+    border-radius: 50%
+    animation: spin 1s linear infinite
+@keyframes spin
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+      
 @import "media"
 
 
