@@ -385,6 +385,10 @@ label
         display: flex
         justify-content: center 
         align-items: center
+.main-photo-wrapper
+    .photo-plus-wrapper
+        label
+            background: transparent
 .add-video-button
     width: 97%
     margin-left: auto 
@@ -518,7 +522,10 @@ swiper-slide
         transform: rotate(0deg)
     100%
         transform: rotate(360deg)
-      
+.delete-photo-item
+    display: none    
+.photo-item a + .delete-photo-item
+    display: block
 @import "media"
 
 
