@@ -21,10 +21,13 @@
     <div class="content">
       <!-- start profile header -->
       <div class="profile-header">
-        <div class="header-logo">
+        <div class="profile-top__header">
+          <div class="header-logo">
           Flirtu
           <img src="img/heart.png" alt="hearts" width="23" height="16" />
         </div>
+        </div>
+        
 
         <div class="main-photo-wrapper">
           <div class="spinner"></div>
@@ -73,11 +76,18 @@
                 <img src="img/photo1.png" alt="photo" class="photo-item__img" accept="image/*"/>
               </a>
 
-              <img
+
+              <div class="delete-photo-item delete-photo-item--big">
+                <div class="delete-photo-item__wrapper"><img
                 src="img/del.png"
                 alt=""
-                class="delete-photo-item delete-photo-item--big"
+                class=""
               />
+
+                </div>
+
+              </div>
+              
               <div class="photo-plus-wrapper">
                 <input type="file" class="input-file" id="file3" accept="image/*"/>
                 <label for="file3"
@@ -116,7 +126,14 @@
                   /></label>
                 </div>
 
-                <img src="img/del.png" alt="delete icon" class="delete-photo-item" />
+                <div class="delete-photo-item">
+                  <div class="delete-photo-item__wrapper">
+                    <img src="img/del.png" alt="delete icon" class="" />
+                  </div>
+                  
+                </div>
+
+                
                 <div class="modal" id="modal">
                   <div class="modal-content">
                     <div class="modal-title">Delete photo?</div>
