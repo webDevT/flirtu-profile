@@ -14,12 +14,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
     />
+    <!-- Подключение CSS для OverlayScrollbars -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars/css/OverlayScrollbars.min.css">
+
+<!-- Подключение JavaScript для OverlayScrollbars -->
+
+
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
+  <style>
+ 
 
-  <body>
+  </style>
+
+  <body id="myScrollableElement">
+
 
     <div class="content">
+    
+        
     
       <!-- start profile header -->
       <div class="profile-header">
@@ -340,6 +353,7 @@
 
 	<!-- end like wrapper -->
 
+   
     </div>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -355,5 +369,12 @@
         transitionDuration: 0,
       });
     </script>
+<script src="https://cdn.jsdelivr.net/npm/overlayscrollbars/js/OverlayScrollbars.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+
+    OverlayScrollbars(document.getElementById('myScrollableElement'), { /* Опции */ });
+  });
+</script>
   </body>
 </html>
